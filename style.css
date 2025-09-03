@@ -1,0 +1,105 @@
+/* style.css */
+:root {
+  --accent: teal;
+  --bg: #fff;
+  --text: #111;
+  --muted: #666;
+  --error: #c62828;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: Arial, sans-serif;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1.25rem;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  margin: 0.25rem 0 0.5rem;
+}
+
+h2 {
+  margin: 1.25rem 0 0.5rem;
+}
+
+form {
+  margin-bottom: 1rem;
+  background: #f7f7f7;
+  padding: 0.75rem;
+  border-radius: 8px;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 0.6rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font: inherit;
+}
+
+textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+button {
+  padding: 0.6rem 1rem;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button.secondary {
+  background: #eee;
+  color: #111;
+  border: 1px solid #ddd;
+}
+
+.field-label {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: 0.25rem 0 0.25rem;
+}
+
+.checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0.25rem 0 0.75rem;
+  color: var(--muted);
+  user-select: none;
+}
+
+.error {
+  color: var(--error);
+  margin: 0.25rem 0 0;
+  min-height: 1.25rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  padding: 0.6rem 0.25rem;
+  border-bottom: 1px solid #eee;
+  line-height: 1.35;
+}
